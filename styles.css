@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+}
+
+.kontejner {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.main {
+  background-color: lightpink;
+  border-radius: 10px;
+}
+
+p {
+  text-align: center;
+  padding: 20px;
+}
