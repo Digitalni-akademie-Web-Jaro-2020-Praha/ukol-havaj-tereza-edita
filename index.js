@@ -7,7 +7,7 @@ let osoba1 = {
 
 let osoba2 = {
   jmeno: 'Karolína',
-  uspory: 68000
+  uspory: 683000
 }
 
 const cenaZajezdu = 100000
@@ -40,28 +40,28 @@ if (
   osoba1.uspory >= pulkaCeny &&
   osoba1.uspory + osoba2.uspory < cenaZajezdu
 ) {
-  vysledek.textContent = `Pcha! Ju don't wanna wórk, ju wanna eat pork? Do dovolené vám dohromady chybí ještě ${cenaZajezdu -
+  vysledek.textContent = `Ju don't wanna wórk, ju wanna eat pork? Do dovolené vám dohromady chybí ještě ${cenaZajezdu -
     osoba1.uspory -
     osoba2.uspory},- Kč.
 
-Kamarádka ${osoba2.jmeno} musí našetřit do cíle ještě ${pulkaCeny -
+Navíc, kamarádka ${osoba2.jmeno} by měla našetřit do cíle ještě ${pulkaCeny -
     osoba2.uspory},- Kč.`
 } else if (
   osoba2.uspory >= pulkaCeny &&
   osoba1.uspory + osoba2.uspory < cenaZajezdu
 ) {
-  vysledek.textContent = `Pcha! Ju don't wanna wórk, ju wanna eat pork? Do dovolené vám dohromady chybí ještě ${cenaZajezdu -
+  vysledek.textContent = `Ju don't wanna wórk, ju wanna eat pork? Do dovolené vám dohromady chybí ještě ${cenaZajezdu -
     osoba1.uspory -
     osoba2.uspory},- Kč.
 
-Kamarádka ${osoba1.jmeno} musí našetřit do cíle ještě ${pulkaCeny -
+Navíc, kamarádka ${osoba1.jmeno} by měla našetřit do cíle ještě ${pulkaCeny -
     osoba1.uspory},- Kč.`
 } else {
-  vysledek.textContent = `Pcha! Ju don't wanna wórk, ju wanna eat pork? Do dovolené vám dohromady chybí ještě ${cenaZajezdu -
+  vysledek.textContent = `Ju don't wanna wórk, ju wanna eat pork? Do dovolené vám dohromady chybí ještě ${cenaZajezdu -
     osoba1.uspory -
     osoba2.uspory},- Kč.
 
-Přesněji: ${osoba1.jmeno} dluží ${pulkaCeny - osoba1.uspory},- Kč a ${
+${osoba1.jmeno} by měla našetřit ještě ${pulkaCeny - osoba1.uspory},- Kč a ${
     osoba2.jmeno
-  } dluží ${pulkaCeny - osoba2.uspory},- Kč.`
+  } by měla našetřit ještě ${pulkaCeny - osoba2.uspory},- Kč.`
 }
